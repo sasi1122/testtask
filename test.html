@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+     #content{
+	 width:100%;
+	 position: relative;
+	 padding:0px;
+	 }
+	 
+     .wrap{
+	  background-color:#F2F3F4;
+	  min-height:100vh;
+	  display: grid;
+	  grid-template-columns: 3fr 7fr;
+	  grid-template-area: 
+	  }
+	 
+	 #side-box{
+	 justify-self:end;
+	 margin-right: 20px;
+	 display:flex;
+	 flex-direction:column;
+	 justify-content:start;
+	 align-items:center;
+	 flex-wrap:wrap;
+	}
+	 
+	 #right-box{
+	 margin-top: 20px;
+	 background-color:white;
+	 width: 800px;
+	 height:auto;
+	 }
+	 
+	 .box1{
+	 margin-top:-100px;
+	 width:200px;
+	 height:auto;
+	 background-color:white;
+	 position:absolute;
+	 justify-self:center;
+	 align-self:center;
+	 }
+	 
+	 .box2{
+	 margin-top: 170px;
+	 width:200px;
+	 height:auto;
+	 background-color:white;
+	 justify-self:center;
+	 align-self:center;
+	 position: relative;
+	 }
+	 
+	 @media screen and (max-width: 900px) and (min-width: 300px) {
+	 .wrap{
+	 display:grid;
+	 grid-template-columns:1fr;
+	 }
+	 
+	 #right-box{
+	 margin-right:20px;
+	 margin-bottom:20px;
+	 padding-bottom:20px;
+	 width:95%;
+	 }
+	 
+	 #side-box{
+	 margin-left:20px;
+	 margin-top:20px;
+	 display:block;
+	 width:95%;
+	 display:flex;
+	 flex-direction:column;
+	 flex-wrap:wrap;
+	 align-items:center;
+	 justify-items:center;
+	 }
+	 
+	 .box1{
+	 margin:20px 20px 0 20px;
+	 padding:10px 0px 10px 0px;
+	 justify-self: center;
+	 align-self:start;
+	 margin:auto;
+	 width:100%;
+	 position:relative;
+	 }
+	 
+	 .box2{
+	justify-self: center;
+	 align-self:start;
+	 width:100%;
+	 height:auto;
+	 position:relative;
+	 margin-top:20px;
+	 }
+	 }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid" id="content">
+<img src="bitmap.png" class="img-fluid" alt="image" style="width:100%"/>
+  
+<div class="wrap" id="bottom-container" >
+
+<div class="wrapper" id="side-box" >
+<div class="box1">
+<b style="margin:20px 20px;">About Organisation</b>
+<div class="box" style="width:150px;height:50px;border:1px solid #ccc; margin:10px 20px;"></div>
+<h4 style="font-weight:bold; margin:10px 20px;">Canine Therapy</h4>
+<p style="font-weight:bold; margin:10px 20px;"> we are a software company and a community of passionate, purpose-led individuals</p>
+<a href="#" style="font-weight:bold; margin:10px 20px; color:blue; text-align:center;">+More Info</a>
+</div>
+<div class= "box2 col-md-12" style="padding:0px">
+<h5 style="font-weight:bold; margin:10px 20px; text-align:center;"> Similar Opportunities</h5>
+<div class="col-md-12" style="padding:0px">
+<p class="col-md-4" style="width:40px;height:40px;border:1px solid #ccc; margin:10px 5px 20px 20px;"></p> 
+<p class="col-md-7" style="padding:5px 0px 5px 0px">senghal building & French highschool </p>
+</div>
+<div class="col-md-12" style="padding:0px">
+<p class="col-md-4" style="width:40px;height:40px;border:1px solid #ccc; margin:10px 5px 20px 20px;"></p> 
+<p class="col-md-7" style="padding:5px 0px 5px 0px;">senghal building & French highschool </p>
+</div>
+</div>
+
+</div>
+<div class="wrapper" id="right-box">
+ <div class="col-md-8" style="padding:0px; display:block; border-right:1px solid #ccc">
+  <div class="wrapper" style="padding:0px;">
+   <h3 style="margin:20px 20px"> Handbooks for Children </h3>
+   <button class="btn btn-danger" style="margin:0px 20px" > one time event</button>
+   <i class="fa fa-print col-md-offset-7" style="color:blue">Print</i>
+  </div>
+  </br>
+   <div class="row" style="margin:20px 10px 20px 20px; border-bottom:1px solid #ccc;"> 
+       <p class="col-md-3" >Time:</p>
+	   <p class="col-md-offset-5"> Sep 27 8 AM - 1 PM </p>
+   </div>
+   <div class="row" style="margin:20px 10px 20px 20px; border-bottom:1px solid #ccc;"> 
+       <p class="col-md-3" >Location:</p>
+	   <p class="col-md-offset-5"> Sep 27 8 AM - 1 PM </p>
+   </div>
+   <div class="wrapper" style="margin:20px 10px 20px 20px;">
+  <ul class="nav nav-tabs">
+    
+    <li><a href="#">Info</a></li>
+    <li class="active"><a href="#">Photos</a></li>
+    <li><a href="#">Videos</a></li>
+  </ul>
+  <br>
+<svg style="height:200px; width:200px; color:#ccc; margin-left:auto; margin-right:auto; display:block" data-prefix="far" data-icon="images" class="svg-inline--fa fa-images fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v48H54a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6v-10h48zm42-336H150a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm6-48c26.51 0 48 21.49 48 48v256c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h384zM264 144c0 22.091-17.909 40-40 40s-40-17.909-40-40 17.909-40 40-40 40 17.909 40 40zm-72 96l39.515-39.515c4.686-4.686 12.284-4.686 16.971 0L288 240l103.515-103.515c4.686-4.686 12.284-4.686 16.971 0L480 208v80H192v-48z"></path></svg>
+
+<h3 style=" text-align:center; color:#ccc; "> No Photos uploaded</h3>
+</div>
+ </div>
+ <div class="col-sm-12 col-md-4" style="margin-top:20px; padding-left:20px;">
+     <button type="button" class="btn btn-success col-xs-10"data-toggle="modal" data-target="#Form" >Apply Now</button>
+	 <br>
+	 <button type="button" class="btn btn-default col-xs-10" style="margin-top:20px ">cancel</button>
+	  <button type="button" class="btn btn-info btn-lg"  data-target="#myModal">Open Modal</button>
+ </div>
+ <div class="modal dark" id="Form">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Please Complete below details</h4>
+      </div>
+      <div class="modal-body">
+        <b>General Information…</b>
+		<br>
+		<form>
+          <div class="form-group">
+            
+            Driving License:<input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            
+            Field:<input type="text" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+	  <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        
+      </div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>
